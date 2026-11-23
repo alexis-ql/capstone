@@ -8,9 +8,9 @@
    The library version: projects/library_example/queries/stats.sql
    Write your SQL below this comment. */
 
--- Display the total number of celestail objects, observations, and discoveries
+-- Display the catalog totals, and the largest celestail object diameter
 
 SELECT
-   (SELECT COUNT(*) FROM CELESTIAL_OBJECT) AS "Celestial Objects",
-   (SELECT COUNT(*) FROM OBSERVATION) AS "Observations",
-   (SELECT COUNT(*) FROM DISCOVERY) AS "Discoveries";
+   (SELECT COUNT(*) FROM CELESTIAL_OBJECT) AS "Total Celestial Objects",
+   (SELECT COUNT(*) FROM OBSERVATION) AS "Total Observations",
+   (SELECT MAX(diameter_km) FROM CELESTIAL_OBJECT) AS "Largest Diameter (km)";
