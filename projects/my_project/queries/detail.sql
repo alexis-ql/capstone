@@ -7,3 +7,16 @@
    The library version: projects/library_example/queries/detail.sql
    Write your SQL below this comment. */
 
+-- Displays details regarding a celetial object and its parent object
+
+SELECT
+   c.object_id AS id,
+   c.object_name AS "Object Name",
+   c.object_type AS "Object Type",
+   c.diameter_km AS "Diameter (km)",
+   c.orbit_period_days AS "Orbit Period (days)",
+   p.object_name AS "Orbits Around"
+FROM CELESTIAL_OBJECT c
+LEFT JOIN CELESTIAL_OBJECT p
+ON c.parent_object_id = p.object_id
+WHERE c.object_id = :id;

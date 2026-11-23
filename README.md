@@ -1,11 +1,15 @@
-# My Capstone Project
+# Solar System Catalog
 
 > **Students:** fill in this top section in Part 4, Step 13 of the guide. Replace everything in this box.
 
 **Live site:** https://your-app-name.onrender.com
-**Built by:** Your Name, CIS 4720
+**Built by:** Alexis Quijas-Luna, CIS 4720
 
 One or two sentences about what your site keeps track of and who would use it.
+
+This Solar System Catalog keeps track of celestial objects within our Solar System. It includes their
+characteristics, observations made, and discovery records. It is designed for students, those interested
+in astronomy, and anyone wanting to learn more about the objects found in our Solar System.
 
 **Database design**
 
@@ -13,9 +17,9 @@ One or two sentences about what your site keeps track of and who would use it.
 
 | Table | What one row is |
 |---|---|
-| table_one | ... |
-| table_two | ... |
-| table_three | ... |
+| CELESTIAL_OBJECT | One celestial object, including its name, type, diameter, orbit period, and parent object. |
+| OBSERVATION | One recorded observation of a celestial object, including the date, instrument, location and notes made about the observation. |
+| DISCOVERY | One discovery record, including the date discoverer, method, and the celestial object. |
 
 ---
 

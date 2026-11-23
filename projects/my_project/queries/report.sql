@@ -6,3 +6,13 @@
    The library version: projects/library_example/queries/report.sql
    Write your SQL below this comment. */
 
+-- Count the observstions recorded per celestial object
+
+SELECT
+   c.object_name AS "Celestial Object",
+   COUNT(o.observation_id) AS "Total Observations"
+FROM CELESTIAL_OBJECT c
+LEFT JOIN OBSERVATION o
+ON c.object_id = o.object_id
+GROUP BY c.object_id, c.object_name
+ORDER BY COUNT(o.observation_id) DESC;

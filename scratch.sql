@@ -7,7 +7,4 @@
    It runs against a fresh copy of your database, built from your
    schema.sql and seed.sql, so you can't break anything. */
 
-SELECT name
-FROM sqlite_master
-WHERE type = 'table'
-ORDER BY name;
+SELECT * FROM books LIMIT 5;

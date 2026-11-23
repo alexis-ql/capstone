@@ -7,3 +7,9 @@
    The library version: projects/library_example/queries/add.sql
    Write your SQL below this comment. */
 
+-- Add new celestial object to the catalogue
+
+INSERT INTO CELESTIAL_OBJECT
+   (object_name, object_type, diameter_km, orbit_period_days, parent_object_id)
+VALUES
+   (:object_name, :object_type, :diameter_km, :orbit_period_days, :parent_object_id);

@@ -9,3 +9,8 @@
    The library version: projects/library_example/queries/add_author_options.sql
    Write your SQL below this comment. */
 
+-- List the celestial objects for the parent object dropdown
+
+SELECT object_id, object_name
+FROM CELESTIAL_OBJECT
+ORDER BY object_name;

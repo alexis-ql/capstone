@@ -6,3 +6,13 @@
    The library version: projects/library_example/queries/detail_related.sql
    Write your SQL below this comment. */
 
+-- Display the observations associated with the celestial objects
+
+SELECT
+   observation_date AS "Observation Date",
+   instrument_used AS "Instrument Used",
+   observation_location AS "Observation Location",
+   observation_note AS "Observation Notes"
+FROM OBSERVATION
+WHERE object_id = :id
+ORDER BY observation_date DESC;
