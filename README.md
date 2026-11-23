@@ -2,7 +2,7 @@
 
 > **Students:** fill in this top section in Part 4, Step 13 of the guide. Replace everything in this box.
 
-**Live site:** https://your-app-name.onrender.com
+**Live site:** https://solar-system-catalog.onrender.com
 **Built by:** Alexis Quijas-Luna, CIS 4720
 
 One or two sentences about what your site keeps track of and who would use it.
