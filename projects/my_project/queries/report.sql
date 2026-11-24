@@ -6,7 +6,9 @@
    The library version: projects/library_example/queries/report.sql
    Write your SQL below this comment. */
 
--- Count the observstions recorded per celestial object
+
+-- How many observations have been recorded per celestial object?
+-- Count the observations recorded per celestial object.
 
 SELECT
    c.object_name AS "Celestial Object",
